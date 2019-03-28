@@ -70,9 +70,8 @@ public class ArticlesFragment extends Fragment {
         articlesViewModel.getError().observe(this, new Observer<Boolean>() {
             @Override
             public void onChanged(@Nullable Boolean error) {
-                if (error) {
+                if (error == null || error)
                     Toast.makeText(getContext(), getString(R.string.something_went_wrong), Toast.LENGTH_SHORT).show();
-                }
             }
         });
     }
