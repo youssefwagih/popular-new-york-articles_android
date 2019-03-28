@@ -1,8 +1,8 @@
-package com.linkdev.practiseapp.repository;
+package com.youssef.practiseapp.repository;
 
 import android.arch.lifecycle.MutableLiveData;
 
-import com.linkdev.practiseapp.repository.model.ArticlesResponse;
+import com.youssef.practiseapp.repository.model.ArticlesResponse;
 
 import retrofit2.Callback;
 

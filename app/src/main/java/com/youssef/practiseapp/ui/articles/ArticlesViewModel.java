@@ -1,14 +1,12 @@
-package com.linkdev.practiseapp.ui.articles;
+package com.youssef.practiseapp.ui.articles;
 
 import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.MutableLiveData;
 import android.arch.lifecycle.ViewModel;
 
-import com.linkdev.practiseapp.repository.DataManager;
-import com.linkdev.practiseapp.repository.DataManagerImp;
-import com.linkdev.practiseapp.repository.model.ArticlesResponse;
-
-import junit.framework.Assert;
+import com.youssef.practiseapp.repository.DataManager;
+import com.youssef.practiseapp.repository.DataManagerImp;
+import com.youssef.practiseapp.repository.model.ArticlesResponse;
 
 import retrofit2.Call;
 import retrofit2.Callback;

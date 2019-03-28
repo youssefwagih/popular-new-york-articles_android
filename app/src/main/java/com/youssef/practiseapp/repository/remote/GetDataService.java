@@ -1,6 +1,6 @@
-package com.linkdev.practiseapp.repository.remote;
+package com.youssef.practiseapp.repository.remote;
 
-import com.linkdev.practiseapp.repository.model.ArticlesResponse;
+import com.youssef.practiseapp.repository.model.ArticlesResponse;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

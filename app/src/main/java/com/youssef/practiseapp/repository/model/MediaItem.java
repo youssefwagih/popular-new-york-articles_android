@@ -1,4 +1,4 @@
-package com.linkdev.practiseapp.repository.model;
+package com.youssef.practiseapp.repository.model;
 
 import com.google.gson.annotations.SerializedName;
 

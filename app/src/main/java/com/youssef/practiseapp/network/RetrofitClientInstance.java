@@ -1,4 +1,4 @@
-package com.linkdev.practiseapp.network;
+package com.youssef.practiseapp.network;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;

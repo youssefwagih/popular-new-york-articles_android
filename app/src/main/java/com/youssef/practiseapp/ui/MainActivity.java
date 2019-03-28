@@ -1,10 +1,10 @@
-package com.linkdev.practiseapp.ui;
+package com.youssef.practiseapp.ui;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import com.linkdev.practiseapp.R;
-import com.linkdev.practiseapp.ui.articles.ArticlesFragment;
+import com.youssef.practiseapp.R;
+import com.youssef.practiseapp.ui.articles.ArticlesFragment;
 
 public class MainActivity extends AppCompatActivity {
     @Override
@@ -12,6 +12,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        getSupportFragmentManager().beginTransaction().add(R.id.screenContainer, ArticlesFragment.newInstance()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.screenContainer, ArticlesFragment.newInstance()).commit();
     }
 }

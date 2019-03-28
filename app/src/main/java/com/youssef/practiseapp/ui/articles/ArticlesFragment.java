@@ -1,4 +1,4 @@
-package com.linkdev.practiseapp.ui.articles;
+package com.youssef.practiseapp.ui.articles;
 
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
@@ -13,9 +13,9 @@ import android.view.ViewGroup;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import com.linkdev.practiseapp.R;
-import com.linkdev.practiseapp.adapters.ArticlesAdapter;
-import com.linkdev.practiseapp.repository.model.ArticlesResponse;
+import com.youssef.practiseapp.R;
+import com.youssef.practiseapp.adapters.ArticlesAdapter;
+import com.youssef.practiseapp.repository.model.ArticlesResponse;
 
 
 public class ArticlesFragment extends Fragment {

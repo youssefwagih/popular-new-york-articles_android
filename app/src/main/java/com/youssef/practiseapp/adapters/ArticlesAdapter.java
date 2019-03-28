@@ -1,4 +1,4 @@
-package com.linkdev.practiseapp.adapters;
+package com.youssef.practiseapp.adapters;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -7,8 +7,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.linkdev.practiseapp.R;
-import com.linkdev.practiseapp.repository.model.ResultsItem;
+import com.youssef.practiseapp.R;
+import com.youssef.practiseapp.repository.model.ResultsItem;
 
 import java.util.List;
 
