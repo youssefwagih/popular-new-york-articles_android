@@ -1,9 +1,6 @@
 package com.linkdev.practiseapp.repository.remote;
 
-import com.linkdev.practiseapp.repository.model.Repo;
-import com.linkdev.practiseapp.repository.model.WeatherResponse;
-
-import java.util.List;
+import com.linkdev.practiseapp.repository.model.ArticlesResponse;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
@@ -15,9 +12,6 @@ import retrofit2.http.GET;
 
 public interface GetDataService {
 
-    @GET("/users/Google/repos")
-    Call<List<Repo>> getAllPhotos();
-
-    @GET("/data/2.5/weather?APPID=3646d0447f17c43fe0d9caa38f6eb274&q=cairo")
-    Call<WeatherResponse> getCurrentWeatherData();
+    @GET("/svc/mostpopular//v2/viewed/1.json?api-key=IsDnmgfMSOpuJZnkqsnlJHeEAZnwzpvV")
+    Call<ArticlesResponse> getArticlesItems();
 }

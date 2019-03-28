@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_small">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/authorIV"
+        android:layout_width="@dimen/author_iv_width"
+        android:layout_height="@dimen/author_iv_height"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/ic_launcher_background"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"/>
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:ellipsize="end"
+        android:lines="2"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toStartOf="@id/txtArrow"
+        app:layout_constraintStart_toEndOf="@+id/authorIV"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Why You Procrastinate (It Has Nothing to Do With Self-Control)" />
+
+    <TextView
+        android:id="@+id/txtAuthor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_xSmall"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:ellipsize="end"
+        android:textColor="@color/gray"
+        android:lines="1"
+        app:layout_constraintEnd_toStartOf="@id/txtArrow"
+        app:layout_constraintStart_toEndOf="@+id/authorIV"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle"
+        tools:text="By CHARLOTTE LIEBERMAN" />
+
+    <TextView
+        android:id="@+id/txtPublishedDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_small"
+        tools:text="2019-03-25"
+        android:drawablePadding="@dimen/padding_small"
+        android:textColor="@color/gray"
+        android:drawableStart="@drawable/date_ic"
+        app:layout_constraintEnd_toStartOf="@id/txtArrow"
+        app:layout_constraintTop_toBottomOf="@+id/txtAuthor"/>
+
+    <TextView
+        android:id="@+id/txtArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_xSmall"
+        android:text=">"
+        android:textSize="25sp"
+        android:textColor="@color/gray2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+</android.support.constraint.ConstraintLayout>

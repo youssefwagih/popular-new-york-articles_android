@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.linkdev.practiseapp.R;
-import com.linkdev.practiseapp.repository.model.Repo;
+import com.linkdev.practiseapp.repository.model.ResultsItem;
 
 import java.util.List;
 
@@ -16,12 +16,12 @@ import java.util.List;
  * Created by Youssef.Waguih on 9/24/2018.
  */
 
-public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomViewHolder> {
+public class ArticlesAdapter extends RecyclerView.Adapter<ArticlesAdapter.CustomViewHolder> {
 
-    private List<Repo> dataList;
+    private List<ResultsItem> dataList;
     private Context context;
 
-    public CustomAdapter(Context context, List<Repo> dataList) {
+    public ArticlesAdapter(Context context, List<ResultsItem> dataList) {
         this.context = context;
         this.dataList = dataList;
     }
@@ -31,25 +31,31 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomView
         public final View mView;
 
         TextView txtTitle;
+        TextView txtAuthor;
+        TextView txtPublishedDate;
 
         CustomViewHolder(View itemView) {
             super(itemView);
             mView = itemView;
 
-            txtTitle = mView.findViewById(R.id.title);
+            txtTitle = mView.findViewById(R.id.txtTitle);
+            txtAuthor = mView.findViewById(R.id.txtAuthor);
+            txtPublishedDate = mView.findViewById(R.id.txtPublishedDate);
         }
     }
 
     @Override
     public CustomViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
-        View view = layoutInflater.inflate(R.layout.custom_row, parent, false);
+        View view = layoutInflater.inflate(R.layout.article_item, parent, false);
         return new CustomViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(CustomViewHolder holder, int position) {
-        holder.txtTitle.setText(dataList.get(position).getBlobsUrl());
+        holder.txtTitle.setText(dataList.get(position).getTitle());
+        holder.txtAuthor.setText(dataList.get(position).getByline());
+        holder.txtPublishedDate.setText(dataList.get(position).getPublishedDate());
     }
 
     @Override
